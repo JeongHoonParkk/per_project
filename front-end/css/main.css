@@ -1,0 +1,226 @@
+body {
+    margin: 0px;
+    font-family: 'Lumanosimo', cursive;
+    background-color: white;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    padding: 30px;
+    position: fixed;
+}
+
+#title {
+    width: 20%;
+    padding: 5px;
+    float: left;
+    font-size: 2.5em;
+    color: #9dc1a0;
+    text-shadow: 4px 2px 2px gray;
+}
+
+#search {
+    height: 10%;
+    width: 45%;
+    padding: 15px;
+    float: left;
+    position: fixed;
+    left: 30%;
+}
+
+.searIpt {
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    font-size: large;
+    padding-left: 20px;
+}
+
+.s_img {
+    width: 25px;
+    height: 25px;
+}
+
+.s_Btn.s_Btn {
+    border: none;
+    outline: none;
+    background-color: white;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.s_ipt {
+    float: left;
+    width: 65%;
+    margin-left: 15%;
+    margin-top: 10px;
+}
+
+.s_btn {
+    float: left;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+div,
+li {
+    /* border: 1px solid black; */
+}
+
+aside {
+    /* border: 1px solid blue; */
+    height: 75%;
+    width: 20%;
+    padding: 15px;
+    margin: 30px;
+    float: left;
+    margin-top: 120px;
+    position: fixed;
+}
+
+#left {
+    float: left;
+    width: 100%;
+}
+
+li {
+    margin-top: 50px;
+    list-style-type: none;
+    margin-left: -30px;
+    height: 40px;
+}
+
+@media(max-width:1150px) {
+    .hidden {
+        display: none;
+    }
+}
+.hidden {
+    width: 70%;
+}
+
+section {
+    /* border: 1px solid blue; */
+    margin-top: 120px;
+    left: 30%;
+    float: left;
+    position: absolute;
+    position: fixed;
+    overflow: scroll;
+    width: 70%;
+    height: 85%;
+}
+
+#exampleModal {
+    margin-left: 3%;
+}
+
+#exampleModalLabel,
+#write_btn,
+#close_btn {
+    color: rgb(183, 179, 179);
+    border-radius: 30px;
+    background-color: white;
+}
+
+#exampleModal {
+    margin-top: 100px;
+}
+
+textarea {
+    height: 300px;
+}
+
+#modal_btn {
+    font-weight: bolder;
+    border: none;
+    background: none;
+    font-size: 1.3em;
+    margin-left: -5px;
+    width: auto;
+
+}
+
+
+#content {
+    margin-top: 20px;
+    width: 100%;
+    height: 500px;
+    border: solid 1px gainsboro;
+    border-radius: 10px;
+}
+
+#content_box {
+    position: absolute;
+    width: 60%;
+    height: 80%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.con_top {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 70px;
+    background-color: #eeefeec3;
+}
+
+.con_body {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    padding: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    border: none;
+    font-weight: bolder;
+    
+}
+.menu_btn,
+.menu {
+    width: 90%;
+}
+
+.menu {
+    padding-left: 5px;
+}
+
+a:hover {
+    color: #b9c3ba;
+}
+
+#modal_btn:hover {
+    color: #b9c3ba;
+}
+
+#title:hover {
+    color: #fff;
+}
+
+footer {
+    width: 20%;
+    /* border: 1px solid black; */
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    color: #b9c3ba;
+    ;
+}
+.icon {
+    width: 35px;
+    height: 35px;
+    float: left;
+}
+.icon_img {
+    width: 30px;
+    height: 30px;
+}
+.logout {
+    margin-top: 150px;
+}

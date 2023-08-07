@@ -1,0 +1,33 @@
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lgy.aboutus.dao.AboutUsDao">
+<!-- 	로그인 -->
+	<select id="login" resultType="com.lgy.aboutus.dto.MemberDto">	
+		select * from MEMBER where nickname = #{nickname} and pwd = #{pwd}
+	</select>
+<!-- 	계정유무 -->
+	<select id="idCheck" resultType="int">	
+		select count(*) from member where nickname = #{nickname}
+	</select>
+<!-- 	회원가입 -->
+	<insert id="register" parameterType="hashmap">
+		insert into member values(#{nickname}, #{pwd}, #{contact}, #{name})
+	</insert>
+	
+<!-- 	글쓰기 -->
+	<insert id="write" parameterType="hashmap">
+		insert into board(b_number, content,  nickname) values(board_seq.NEXTVAL,#{content},#{nickname})
+	</insert>
+<!-- 	글 리스트 -->
+    <select id="contentList" parameterType="hashmap" resultType="com.lgy.aboutus.dto.BoardDto">
+        select content, b_number, nickname from board where nickname = #{nickname} order by b_number desc
+    </select>
+    <update id="update" parameterType="hashmap">
+    	update board set content = #{content} where b_number = #{b_number}
+    </update>
+    <delete id="delete" parameterType="hashmap">
+    	delete from board where b_number = #{b_number}
+    </delete>
+</mapper>

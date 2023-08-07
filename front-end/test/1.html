@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            font-family: 'Lumanosimo', cursive;
+            background-color: white;
+        }
+
+        header {
+            width: 100%;
+            height: 50px;
+            padding: 30px;
+            position: fixed;
+        }
+
+        #title {
+            width: 20%;
+            padding: 5px;
+            float: left;
+            font-size: 2.5em;
+            color: #9dc1a0;
+            text-shadow: 4px 2px 2px gray;
+        }
+
+        #search {
+            height: 10%;
+            width: 45%;
+            padding: 15px;
+            float: left;
+            position: fixed;
+            left: 30%;
+        }
+
+        .searIpt {
+            width: 100%;
+            height: 40px;
+            border-radius: 50px;
+            font-size: large;
+            padding-left: 20px;
+        }
+
+        .s_img {
+            width: 25px;
+            height: 25px;
+        }
+
+        .s_Btn.s_Btn {
+            border: none;
+            outline: none;
+            background-color: white;
+            margin-top: 4px;
+            cursor: pointer;
+        }
+
+        .s_ipt {
+            float: left;
+            width: 65%;
+            margin-left: 15%;
+            margin-top: 10px;
+        }
+
+        .s_btn {
+            float: left;
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+
+        div,
+        li {
+            border: 1px solid black;
+        }
+
+        aside {
+            border: 1px solid blue;
+            height: 75%;
+            width: 20%;
+            padding: 15px;
+            margin: 30px;
+            float: left;
+            margin-top: 120px;
+            position: fixed;
+        }
+
+        #left {
+            float: left;
+            width: 100%;
+
+        }
+
+        li {
+            margin-top: 50px;
+            list-style-type: none;
+        }
+
+        @media(max-width:1150px){
+            li{
+                display: none;
+            }
+        }
+
+        section {
+            border: 1px solid blue;
+            margin-top: 120px;
+            left: 30%;
+            float: left;
+            position: absolute;
+            position: fixed;
+            overflow: scroll;
+            width: 70%;
+            height: 85%;
+        }
+
+        #exampleModal {
+            margin-left: 3%;
+        }
+
+        #exampleModalLabel,
+        #write_btn,
+        #close_btn {
+            color: rgb(183, 179, 179);
+            border-radius: 30px;
+            background-color: white;
+        }
+
+        #exampleModal {
+            margin-top: 100px;
+        }
+
+        textarea {
+            height: 300px;
+        }
+
+        #modal_btn {
+            font-weight: bolder;
+            border: none;
+            background: none;
+            font-size: 1.3em;
+        }
+
+
+        #content {
+            margin-top: 20px;
+            width: 100%;
+            height: 500px;
+            border: solid 1px gainsboro;
+            border-radius: 10px;
+        }
+
+        #content_box {
+            position: absolute;
+            width: 60%;
+            height: 80%;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .con_top {
+            width: 100%;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            height: 70px;
+            background-color: #eeefeec3;
+        }
+
+        .con_body {
+            width: 90%;
+            height: auto;
+            margin-left: 5%;
+            padding: 10px;
+        }
+
+        #move {
+            text-decoration: none;
+            color: black;
+            font-size: 1.3em;
+            border: none;
+            font-weight: bolder;
+        }
+        .menu_btn, .menu{
+            width: 65%;
+        }
+        .menu {
+            padding-left: 5px;
+        }
+
+        #move:hover {
+            color: #b9c3ba;
+        }
+
+        #modal_btn:hover {
+            color: #b9c3ba;
+        }
+
+        #title:hover {
+            color: #fff;
+        }
+
+        footer {
+            width: 20%;
+            border: 1px solid black;
+            position: fixed;
+            bottom: 20px;
+            left: 30px;
+            color: #b9c3ba;
+            ;
+        }
+    </style>
+</head>
+
+<body style="font-family: 'Lumanosimo', cursive;">
+    <header>
+        <div id="title">
+            About Us
+        </div>
+        <div id="search">
+            <div class="s_ipt">
+                <input type="text" name="" class="searIpt" placeholder="Search">
+            </div>
+            <div class="s_btn">
+                <button class="s_Btn"><img src="img/search.png" class="s_img"></button>
+            </div>
+        </div>
+    </header>
+    <aside>
+        <div id="left">
+            <ul>
+                <li class="menu">
+                    <a id="move" href="">Home</a>
+                </li>
+                <li class="menu_btn">
+                    <button type="button" id="modal_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        data-bs-whatever="@mdo">
+                        Write
+                    </button>
+                </li>
+                <li class="menu"><a id="move" href="/">Profile</a></li>
+                <li class="menu"><a id="move" href="/">Setting</a></li>
+            </ul>
+        </div>
+    </aside>
+    <section>
+        <div id="content_box">
+            <!-- 콘텐츠 내용 c:if 내용있으면 표시 / 없으면 미표시 -->
+            <div id="content">
+                <div class="con_top"></div>
+                <div class="con_body">
+                    <!-- c:if 사용 사진 있으면 표시 / 없으면 미표시 -->
+                    <img src="" alt="">
+                    <!--  -->
+
+                    <!-- 글 내용 -->
+                    오늘은 즐거웠다.
+
+                </div>
+            </div>
+            <!--  -->
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            Since 2023
+        </div>
+    </footer>
+    <!-- 모달 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">자유롭게 표현하세요!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 내용 전송 폼 -->
+                    <form>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="message-text" name=""></textarea>
+                        </div>
+                    </form>
+                    <!--  -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="close_btn" data-bs-dismiss="modal">Close</button>
+                    <button type="button" id="write_btn">Write</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+</html>

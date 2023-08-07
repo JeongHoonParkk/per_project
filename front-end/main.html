@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body style="font-family: 'Lumanosimo', cursive;">
+    <header>
+        <div id="title">
+            About Us
+        </div>
+        <div id="search">
+            <div class="s_ipt">
+                <input type="text" name="" class="searIpt" placeholder="Search">
+            </div>
+            <div class="s_btn">
+                <button class="s_Btn"><img src="img/search.png" class="s_img"></button>
+            </div>
+        </div>
+    </header>
+    <aside>
+        <div id="left">
+            <ul>
+                <li class="menu">
+                    <div>
+                        <a class="hidden" href="">Home</a>
+                        <div class="icon">
+                            <a href="">
+                                <img src="img/home.png" class="icon_img" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu_btn">
+                    <div>
+                        <button type="button" class="hidden" id="modal_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            data-bs-whatever="@mdo">
+                            Write
+                        </button>
+                        <div class="icon">
+                            <a href="">
+                                <img src="img/write.png" class="icon_img" alt="">    
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div>
+                        <a class="hidden" href="/">Profile</a>
+                        <div class="icon">
+                            <a href="">
+                                <img src="img/profile.png" class="icon_img" alt="">    
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div>
+                        <a class="hidden" href="/">Setting</a>
+                        <div class="icon">
+                            <a href="">
+                                <img src="img/setting.png" class="icon_img" alt="">    
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div class="logout">
+                        <a href="">logout</a> 
+                    </div>
+                </li>
+            </ul> 
+        </div>
+    </aside>
+    <section>
+        <div id="content_box">
+            <!-- 콘텐츠 내용 c:if 내용있으면 표시 / 없으면 미표시 -->
+            <div id="content">
+                <div class="con_top"></div>
+                <div class="con_body">
+                    <!-- c:if 사용 사진 있으면 표시 / 없으면 미표시 -->
+                    <img src="" alt="">
+                    <!--  -->
+
+                    <!-- 글 내용 -->
+                    오늘은 즐거웠다.
+
+                </div>
+            </div>
+            <!--  -->
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            Parkk © 2023
+        </div>
+    </footer>
+    <!-- 모달 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">자유롭게 표현하세요!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 내용 전송 폼 -->
+                    <form>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="message-text" name=""></textarea>
+                        </div>
+                    </form>
+                    <!--  -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="close_btn" data-bs-dismiss="modal">Close</button>
+                    <button type="button" id="write_btn">Write</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,75 @@
+body {
+    font-family: 'Lumanosimo', cursive;
+}
+table {
+    margin:auto; 
+    margin-top: 100px;
+    width: 400px;
+    height: 600px;
+}
+table {
+    border-collapse : collapse;
+    border : 1px solid gainsboro;
+    text-align: center;
+}
+th {
+   font-size: 50px;
+   height: 30%;
+}
+#ipt {
+    width: 250px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: rgb(247, 246, 246);
+    font-size: 1em;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+::-webkit-input-placeholder { color: rgb(183, 179, 179); }
+#sub {
+    margin-top: 30px;
+    width: 260px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #cde6cf;
+    font-weight: bolder;
+    color: white;
+}
+.hr-sect {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.35);
+    font-size: 15px;
+    margin: 8px 0px;
+}
+.hr-sect::before,
+.hr-sect::after {
+    content: "";
+    flex-grow: 1;
+    background:  rgb(194, 193, 193);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 16px;
+}
+.register {
+    margin-top: 40px;
+}
+a {
+    color: #9dc1a0;
+    text-decoration: none;
+}
+.title_t {
+    height: 5px;
+    font-size: large;
+    color: rgb(123, 123, 123);
+}
+.title {
+    color: #ffffff;
+    text-shadow: 4px 2px 2px gray;
+}
+#sub:hover{
+    background-color: #b9c3ba;
+}
